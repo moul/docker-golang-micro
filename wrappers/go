@@ -1,0 +1,15 @@
+#!/bin/sh -e
+
+
+if [ ! -d "${GOROOT}/bin" ]; then
+    # install go in memory
+    mkdir -p "${GOROOT}/.."
+    cd "${GOROOT}/.."
+    wget -q "${GOLANG_BIN_URL}" -O golang.tar.gz
+    echo "$GOLANG_BIN_SHA256  golang.tar.gz" | sha256sum -c -
+    tar xf golang.tar.gz
+    rm -f golang.tar.gz
+fi
+
+
+exec "${GOROOT}/bin/go" $@
