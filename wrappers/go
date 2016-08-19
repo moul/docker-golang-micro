@@ -6,7 +6,7 @@ if [ ! -d "${GOROOT}/bin" ]; then
     mkdir -p "${GOROOT}/.."
     cd "${GOROOT}/.."
     wget -q "${GOLANG_BIN_URL}" -O golang.tar.gz
-    echo "$GOLANG_BIN_SHA256  golang.tar.gz" | sha256sum -c -
+    echo "$GOLANG_BIN_SHA256  golang.tar.gz" | sha256sum -c - >/dev/null
     tar xf golang.tar.gz
     rm -f golang.tar.gz
 fi
