@@ -20,7 +20,7 @@ RUN apt-get update && apt-get -y install wget && apt-get clean \
 
 WORKDIR $GOPATH
 
-COPY ./wrappers/ /usr/local/bin/
+COPY ./go-wrapper /usr/local/bin/go
 
 # proof
 RUN go version
