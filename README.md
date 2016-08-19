@@ -1,8 +1,10 @@
 # golang-micro docker images
-trusted builds *AND* small images
 
-`golang-micro` is a docker image that downloads Golang in memory each time something calls the `go` binary.
-It is particularly useful to build minimal images while still using the Docker trusted builds' system.
+[trusted builds](https://blog.docker.com/2013/11/introducing-trusted-builds/) *AND* [small images](https://blog.codeship.com/building-minimal-docker-containers-for-go-applications/).
+
+`golang-micro` is a docker image that downloads [Golang](https://golang.org) in memory each time something calls the `go` binary.
+
+It is particularly useful to build [minimal images](https://blog.codeship.com/building-minimal-docker-containers-for-go-applications/) while still using the [Docker trusted builds](https://blog.docker.com/2013/11/introducing-trusted-builds/).
 
 ## Usage
 
