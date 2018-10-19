@@ -1,5 +1,7 @@
 # golang-micro docker images
 
+[![GuardRails badge](https://badges.production.guardrails.io/moul/docker-golang-micro.svg)](https://www.guardrails.io)
+
 [trusted builds](https://blog.docker.com/2013/11/introducing-trusted-builds/) *AND* [small images](https://blog.codeship.com/building-minimal-docker-containers-for-go-applications/).
 
 `golang-micro` is a docker image that downloads [Golang](https://golang.org) in memory each time something calls the `go` binary.
